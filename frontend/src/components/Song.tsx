@@ -2,23 +2,21 @@ import { Card, Flex, CardBody, Box, Center, Spacer, Text, Image } from '@chakra-
 
 function Song() {
     return (
-        <Center>
-            <Card width="50%">
-                <CardBody>
-                    <Flex>
-                        <Box>
-                            <Text fontSize="2xl">Blue in Green (feat. John Coltrane & Bill Evans)</Text>
-                            <Text fontSize="lg">Miles Davis</Text>
-                            <Text fontSize="md">5:37</Text>
-                        </Box>
-                        <Spacer />
-                        <Center>
-                            <Image boxSize='70px' src="/play-button.png" />
-                        </Center>
-                    </Flex>
-                </CardBody>
-            </Card>
-        </Center>
+        <Card width="25%">
+            <CardBody>
+                <Flex>
+                    <Box>
+                        <Text fontSize="md">Blue in Green (feat. John Coltrane)</Text>
+                        <Text fontSize="sm">Miles Davis</Text>
+                        <Text fontSize="xs">5:37</Text>
+                    </Box>
+                    <Spacer />
+                    <Center>
+                        <Image boxSize='30px' src="/play-button.png" />
+                    </Center>
+                </Flex>
+            </CardBody>
+        </Card>
     )
 };
 
