@@ -1,18 +1,22 @@
 import { Card, Flex, CardBody, Box, Center, Spacer, Text, Image} from '@chakra-ui/react';
 import {useState} from "react"
 
+let audio = new Audio("http://streaming.tdiradio.com:8000/house.mp3")
+
 function Song() {
 
     const [play, setPlay] = useState(false); // Default state is false
-    const [buttonSource, setButtonSource] = useState('')
+    const [buttonSource, setButtonSource] = useState("/play-button.png")
 
     function handleClick () {
 
-        if (!play){ // Playing audio
+        if (!play){ // Start playing audio
             setButtonSource("/stop-button.png")
+            audio.play()
 
-        } else { // Stopping audio
+        } else { // Stop playing audio
             setButtonSource("/play-button.png")
+            audio.pause()
         }
 
         setPlay(!play)
