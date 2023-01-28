@@ -1,17 +1,17 @@
-import { Center, Text } from '@chakra-ui/react';
-import Song from '../components/Song';
+import { Box, VStack, Center, Flex, Text, Container } from '@chakra-ui/react';
 import StartButton from '../components/StartButton';
 
 function Home() {
     return (
-        <>
-            <Center>
-                <Text fontSize="3xl">Welcome to <strong>Cozify</strong></Text>
-            </Center>
-            <Center>
+        <Flex alignItems="center" justifyContent="center" height="100vh" backgroundImage="home-bg.png">
+            <VStack>
+                <Box>
+                    <Text as="span" color="white" fontSize="6xl">Welcome to </Text>
+                    <Text as="span" color="#443737" fontSize="6xl"><strong>Cozify</strong></Text>
+                </Box>
                 <StartButton />
-            </Center>
-        </>
+            </VStack>
+        </Flex>
     )
 }
 

@@ -19,7 +19,7 @@ function Song() {
     }
 
     return (
-        <Card width="25%">
+        <Card width="100%">
             <CardBody>
                 <Flex>
                     <Box>
