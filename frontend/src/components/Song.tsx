@@ -2,7 +2,7 @@ import { Card, Flex, CardBody, Box, Center, Spacer, Text, Image } from '@chakra-
 
 function Song() {
     return (
-        <Card width="25%">
+        <Card width="100%">
             <CardBody>
                 <Flex>
                     <Box>
