@@ -9,7 +9,10 @@ function StartButton() {
     }
 
     return (
-        <Button onClick={handleClick}>Let's Go</Button>
+        <Button backgroundColor="#443737" color="white" _hover={{
+            background: "white",
+            color: "#443737",
+        }} onClick={handleClick}>Let's get cozy</Button>
     )
 }
 
