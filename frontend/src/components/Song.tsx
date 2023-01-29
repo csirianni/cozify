@@ -1,22 +1,29 @@
-import { Card, Flex, CardBody, Box, Center, Spacer, Text, Image} from '@chakra-ui/react';
-import {useState} from "react"
+import { Card, Flex, CardBody, Box, Center, Spacer, Text, Image } from '@chakra-ui/react';
+import { useState, useMemo } from "react"
 
-let audio = new Audio("http://streaming.tdiradio.com:8000/house.mp3")
+interface SongProps {
+    url: string
+}
 
-function Song() {
+function Song({ url }: SongProps) {
 
     const [play, setPlay] = useState(false); // Default state is false
     const [buttonSource, setButtonSource] = useState("/play-button.png")
 
-    function handleClick () {
+    // useMemo used to fix pause not pausing the audio
+    // https://stackoverflow.com/questions/68295443/audio-pause-is-not-working-after-audio-play-in-react
+    const audio = useMemo(() => new Audio(url), [url]);
 
-        if (!play){ // Start playing audio
+    function handleClick() {
+        if (!play) { // Start playing audio
             setButtonSource("/stop-button.png")
+            console.log("audio should be played")
             audio.play()
 
         } else { // Stop playing audio
             setButtonSource("/play-button.png")
             audio.pause()
+            console.log("audio should be paused")
             audio.currentTime = 0
         }
 

@@ -8,11 +8,11 @@ function Songs() {
                 <VStack width="80%">
                     <Text fontSize="5xl" color="white" marginBottom="10">Choose a cozy song.</Text>
                     <VStack width="100%">
-                        <Song />
-                        <Song />
-                        <Song />
-                        <Song />
-                        <Song />
+                        <Song url="http://streaming.tdiradio.com:8000/house.mp3" />
+                        <Song url="http://streaming.tdiradio.com:8000/house.mp3" />
+                        <Song url="http://streaming.tdiradio.com:8000/house.mp3" />
+                        <Song url="http://streaming.tdiradio.com:8000/house.mp3" />
+                        <Song url="http://streaming.tdiradio.com:8000/house.mp3" />
                     </VStack>
                 </VStack>
             </Flex>
