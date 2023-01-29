@@ -11,7 +11,7 @@ interface SongProps {
 function Song({ title, duration, url }: SongProps) {
 
     const [play, setPlay] = useState(false); // Default state is false
-    const [buttonSource, setButtonSource] = useState("/play-button.png")
+    const [buttonSource, setButtonSource] = useState("play-button.png")
 
     // useMemo used to fix pause not pausing the audio
     // https://stackoverflow.com/questions/68295443/audio-pause-is-not-working-after-audio-play-in-react
@@ -19,11 +19,11 @@ function Song({ title, duration, url }: SongProps) {
 
     function handleClick() {
         if (!play) { // Start playing audio
-            setButtonSource("/stop-button.png")
+            setButtonSource("stop-button.png")
             audio.play()
 
         } else { // Stop playing audio
-            setButtonSource("/play-button.png")
+            setButtonSource("play-button.png")
             audio.pause()
             audio.currentTime = 0
         }
