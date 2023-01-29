@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cozify/static/css/main.63242f81.css",
-    "main.js": "/cozify/static/js/main.b48ab3f2.js",
+    "main.js": "/cozify/static/js/main.d258d6b9.js",
     "static/media/inter-all-500-normal.woff": "/cozify/static/media/inter-all-500-normal.83e7a0ab5dc3177d4723.woff",
     "static/media/inter-latin-ext-500-normal.woff2": "/cozify/static/media/inter-latin-ext-500-normal.cd2491c30c7f25218ecd.woff2",
     "static/media/inter-latin-500-normal.woff2": "/cozify/static/media/inter-latin-500-normal.c72c72b70c82b1f4bacf.woff2",
@@ -12,10 +12,10 @@
     "static/media/inter-vietnamese-500-normal.woff2": "/cozify/static/media/inter-vietnamese-500-normal.af96698e6248b5be6d91.woff2",
     "index.html": "/cozify/index.html",
     "main.63242f81.css.map": "/cozify/static/css/main.63242f81.css.map",
-    "main.b48ab3f2.js.map": "/cozify/static/js/main.b48ab3f2.js.map"
+    "main.d258d6b9.js.map": "/cozify/static/js/main.d258d6b9.js.map"
   },
   "entrypoints": [
     "static/css/main.63242f81.css",
-    "static/js/main.b48ab3f2.js"
+    "static/js/main.d258d6b9.js"
   ]
 }
