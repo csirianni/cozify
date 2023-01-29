@@ -17,6 +17,7 @@ function Song() {
         } else { // Stop playing audio
             setButtonSource("/play-button.png")
             audio.pause()
+            audio.currentTime = 0
         }
 
         setPlay(!play)
