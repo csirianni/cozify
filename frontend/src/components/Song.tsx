@@ -1,11 +1,14 @@
 import { Card, Flex, CardBody, Box, Center, Spacer, Text, Image } from '@chakra-ui/react';
 import { useState, useMemo } from "react"
+import internal from 'stream';
 
 interface SongProps {
+    title: string,
+    duration: string,
     url: string
 }
 
-function Song({ url }: SongProps) {
+function Song({ title, duration, url }: SongProps) {
 
     const [play, setPlay] = useState(false); // Default state is false
     const [buttonSource, setButtonSource] = useState("/play-button.png")
@@ -33,9 +36,8 @@ function Song({ url }: SongProps) {
             <CardBody>
                 <Flex>
                     <Box>
-                        <Text fontSize="md">Blue in Green (feat. John Coltrane)</Text>
-                        <Text fontSize="sm">Miles Davis</Text>
-                        <Text fontSize="xs">5:37</Text>
+                        <Text fontSize="xl">{title}</Text>
+                        <Text fontSize="md">{duration}</Text>
                     </Box>
                     <Spacer />
                     <Center>
